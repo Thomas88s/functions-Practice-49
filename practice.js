@@ -66,14 +66,8 @@ const words = [
     (Google 'javascript startswith' to get started)
  */
 
-const filter = (arr, str) => { 
-    let letter =  str
-    let newArr = arr.filter(word => word.startsWith(letter))
-             return newArr
-    }
-    
 
-console.log(filter(words, "k"))
+
 /*
     Function to build a single string from the array
     (Google 'javascript combine all items in array' to get started)
@@ -92,3 +86,14 @@ console.log(filter(words, "k"))
 
 
 console.log()
+
+
+const catchAFish = (chance) => {
+    if (Math.random() * 99 < chance) {
+        return `Sven hooked a tuna!  :)`
+    } else {
+       return `Sven came up empty-handed.  :(`
+    }
+
+}
+console.log(catchAFish(33))
